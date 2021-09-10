@@ -1,6 +1,12 @@
 import './style.css'
-import ExpressionParser from './src/ExpressionParser';
+// import ExpressionParser from './src/ExpressionParser';
+import SimpleExpp from './src/SimpleExpp';
 
+let se = new SimpleExpp(false);
+
+console.log( se.parse('2 + 4 - (1 * 5)') );
+
+/*
 let e = new ExpressionParser();
 
 let expr = [
@@ -18,3 +24,4 @@ let expr = [
 ];
 
 expr.forEach((ex, i) => console.log( i, ex, e.parse(ex) ));
+//*/
